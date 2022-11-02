@@ -1,11 +1,10 @@
 
 
-//import validator from './validator.js';
+import  validator from './validator.js';
+validator.isValid();
+console.log(validator);
 
-//console.log(validator);
-
-
-
+    //formulario que tienelos inputs de tarjeta
     let formulario = document.querySelector("#formularioDos");
     let numeroDeTarjeta = document.querySelector(".tarjetaValidacion #numeroDeTarjeta");
 
@@ -25,12 +24,3 @@
     })       
 
 
-function comenzar (){
-let valorInput = document.querySelector("#registro").value;
-localStorage.setItem("Gauss",valorInput);
-
-    if(valorInput === ""){
-        return
-    }
-}
-localStorage.clear();

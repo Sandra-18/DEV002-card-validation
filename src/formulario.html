@@ -47,11 +47,12 @@
                         </div>
                         <p class="formularioDos__input-error">La clave debe contener 16 digitos</p>
                     </div>
-        
+                        <input type="button" value="COMPROBAR" id="btnComprobar">
                 </form>
+                
             </div>
     </main>
-    <script defer src="index.js"></script>
+    <script defer src="index.js" type="module"></script>
     <script>
        let capturaDeNombre = localStorage.getItem("Gauss");
        document.querySelector("#nombre").innerHTML = capturaDeNombre;
