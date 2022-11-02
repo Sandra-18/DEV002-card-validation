@@ -1,0 +1,182 @@
+
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+:root{
+    --color-negro:#000;
+    --color-titulo:#ff1493;
+    --color-aside:#000;
+    --color-nombreInput:#000;
+    --color-placeholderIndex:#000;
+}
+body{
+    background-color: var(--color-negro);
+}
+
+main{
+    display: flex;
+}
+.tituloBlack{
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-size: 198px;
+    color: var(--color-titulo);
+    letter-spacing: 10px;
+}
+.izquierda{
+    width: 50%;
+    margin-left: 15%;
+    position: relative;
+    padding-top: 1%;
+}
+.derecha{
+    width: 50%;
+    margin-right: 15%;
+    display: flex;
+
+}
+.containerImagen img {
+    position: absolute;
+    top: 48vh;
+    left: 48%;
+}.containerRegistro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.containerAside{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    padding-top: 15%;
+    align-items: center;
+}
+.frase{
+    font-size: 68px;
+    text-align: center;
+    color: aquamarine;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.registroNombre {
+    width: 70%;
+    height: 5vh;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: xx-large;
+    color: purple;
+}
+::placeholder{
+    font-size: 20px;
+    padding: 2%;
+    color: darkorchid;
+}
+.enlace{
+    width: 30%;
+}
+#bienvenido {
+    padding-top: 20px;
+    margin-top: 41px;
+    width: 30%;
+    height: 6vh;
+    background-color: rgb(10, 10, 10);
+    font-size: 20px;
+    padding-bottom: 40px;
+    color: #ffff;
+    border: 2px inset white;
+  }
+  /*--------------------css--tarjeta-----------------*/
+
+  .containerForm{
+    background-color: darkgrey;
+    height: 100vh;
+    display: block;
+    position: relative;
+  }
+  .tarjetaValidacion{
+    position: absolute;
+    top: 5vh;
+    left: 31%;
+    width: 32%;
+    height: 38vh;
+    box-shadow: 4px -3px 10px 0 lightblue;
+    color: #af8d35;
+    background-color: #1f324d;
+    border-radius: 20px;
+    z-index: 2;
+  }
+  .nombreBank p{
+    text-align: end;
+    padding: 15px 24px 0px 0px;
+    font-size: x-large;
+  }
+  .chipSeñal{
+    display:flex;
+    padding-left: 15%;
+    padding-top: 14px;
+  }
+  .señal{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .numerales p{
+    text-align: center;
+    font-size: x-large;
+    padding-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .caducidad p{
+    font-size: small;
+    text-align: center;
+  }
+  .impresionLogo{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 28px;
+  }
+  .impresion{
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+  }
+   /*--------------------css--formulario-----------------*/
+   .containerFormulario{
+    position: absolute;
+    top: 45vh;
+    left: 29%;
+    width: 37%;
+    height: 50vh;
+    box-shadow: 4px -3px 10px 0 rgba(28, 40, 44, 0.371);
+    color: #af8d35;
+    background-color: #e2e5e9;
+    border-radius: 20px;
+    z-index: 1;
+   }
+   .formularioDos{
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 45vh;
+    padding-top: 32px;
+   }
+   .formularioDos__grupo{
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .altura{
+    height: 15vh;
+   }
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VALIDACION</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <main class="containerForm">
+            <div class="tarjetaValidacion">
+                <div class="nombreBank">
+                    <p>Mundo Bank</p>
+                </div>
+                <div class="chipSeñal">
+                    <figure>
+                        <img src="img/chip-tarjeta.png" alt="chip" width="50px" height="50px">
+                    </figure>
+                    <figure class="señal">
+                        <img src="img/senal_wifi.png" alt="señal" width="30px" height="30px">
+                    </figure>
+                </div>
+                <div class="numerales">
+                    <p id="numeroDeTarjeta">#### #### #### ####</p>
+                </div>
+                <div class="caducidad">
+                    <p>Valida hasta <strong>12/23</strong></p>
+                </div>
+                <div class="impresionLogo">
+                    <div class="impresion">
+                        <span id="nombre"></span>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="img/visa.png" alt="visa" width="70px" height="50px">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="containerFormulario">
+                <form action="" class="formularioDos" id="formularioDos">
+                    <div class="formularioDos__grupo altura" id="grupo__clave">
+                        <label for="tarjeta" class="formularioDos__label">clave</label>
+                        <div class="formularioDos__grupo-input">
+                            <input type="text" class="formularioDos__input" name="Tarjeta" id="claveTarjeta" placeholder="#### #### #### ####" maxlength="19">
+                        </div>
+                        <p class="formularioDos__input-error">La clave debe contener 16 digitos</p>
+                    </div>
+        
+                </form>
+            </div>
+    </main>
+    <script defer src="index.js"></script>
+    <script>
+       let capturaDeNombre = localStorage.getItem("Gauss");
+       document.querySelector("#nombre").innerHTML = capturaDeNombre;
+    </script>
+    
+    
+</body>
+</html>
