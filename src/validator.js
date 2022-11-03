@@ -2,7 +2,7 @@
    
     const validator = {
       isValid: function(){
-  
+          // let cardNumber = document.querySelector("#claveTarjeta").value;
           let cardNumber = "5529931622059431";
           console.log(cardNumber);
           const almacenDeNumeros = Array.from(cardNumber);
@@ -42,6 +42,6 @@
 
 
     export default validator
-
+//5529931622059431
    
     

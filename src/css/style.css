@@ -154,9 +154,9 @@ main{
    /*--------------------css--formulario-----------------*/
    .containerFormulario{
     position: absolute;
-    top: 45vh;
-    left: 29%;
-    width: 37%;
+    top: 40vh;
+    left: 28%;
+    width: 38%;
     height: 50vh;
     box-shadow: 4px -3px 10px 0 rgba(28, 40, 44, 0.371);
     color: #af8d35;
@@ -177,6 +177,27 @@ main{
     justify-content: center;
    }
    .altura{
-    height: 15vh;
+    height: 20vh;
+    padding-bottom: 24px;
+   }
+   .formularioDos__label{
+    font-size: xx-large;
+    color: darkblue;
+    padding-top: 5px;
+    padding-bottom: 13px;
+   }
+   .containerBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+   .error{
+    margin-top: 8px;
+    color: darkblue;
+   }
+   .formularioDos__input{
+    height: 25px;
+    border: none;
+    font-size: 23px;    
    }
 
