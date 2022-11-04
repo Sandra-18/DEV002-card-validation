@@ -56,7 +56,7 @@ main{
 .frase{
     font-size: 68px;
     text-align: center;
-    color: aquamarine;
+    color: #7fffd4;
 }
 .formulario{
     display: flex;

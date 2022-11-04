@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>VALIDACION</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
     <main class="containerForm">
@@ -36,14 +37,12 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="containerFormulario">
                 <form action="" class="formularioDos" id="formularioDos">
                     <div class="formularioDos__grupo altura" id="grupo__clave">
                         <label for="tarjeta" class="formularioDos__label">Clave</label>
                         <div class="formularioDos__grupo-input">
-                            <input type="text" class="formularioDos__input" name="Tarjeta" id="claveTarjeta" placeholder="#### #### #### ####" maxlength="19">
+                            <input type="text" class="formularioDos__input" name="Tarjeta" id="claveTarjeta" placeholder="#### #### #### ####" maxlength="16">
                         </div>
                         <p class="error">La clave debe contener 16 digitos</p>
                     </div>
@@ -51,7 +50,6 @@
                         <input type="button" value="COMPROBAR" class="btnComprobar" id="btnComprobar">
                     </div>
                 </form>
-                
             </div>
     </main>
     <script defer src="index.js" type="module"></script>
