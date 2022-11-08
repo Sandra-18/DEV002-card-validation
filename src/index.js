@@ -1,30 +1,19 @@
-import  validator from './validator.js';
+import validator from './validator.js';
 
-    const btnAccionador = document.querySelector("#btnComprobar");
-    let formulario = document.querySelector("#formularioDos");
-    let numeroDeTarjeta = document.querySelector(".tarjetaValidacion #numeroDeTarjeta");
-  
-    btnAccionador.addEventListener("click", ()=>{
-        validator.isValid();
-       
-    })
+let verificacion = document.getElementById("btnComprobar")  //este boton me acciona la funcion
 
-      
-    formulario.claveTarjeta.addEventListener("keyup", (e)=>{ 
-        let contenido = e.target.value;   
-        formulario.claveTarjeta.value = contenido
-        
-        //expresiones regulares con ciertas funciones
-            .replace(/\s/g, '') 
-            .replace(/\D/g, '')
-           //  .replace(/([0-9]{4})/g, '$1 ')
-            .trim();      
-            numeroDeTarjeta.textContent = contenido;
-            validator.maskify();
-            if(contenido === ""){
-                numeroDeTarjeta.textContent = "#### #### #### ####";
-            }
-           
-    })  
+verificacion.addEventListener("click", () => {
 
+    let inputNumero = document.getElementById("claveTarjeta").value;
+    let resumValidator = validator.isValid(inputNumero);
+    // let resunMaskify = validator.maskify(inputNumero);
+    
+    if (resumValidator) {
+        alert("valido");
+    } else {
+        console.log("invalido");
+        alert("invalido");
+    }
+});
+   
 
