@@ -7,7 +7,7 @@ const validator = {
 
     for (let i = 0; i < numerosInvertidos.length; i++) {
       if ((i + 1) % 2 == 0) {                              //capturando las posiciones pares ¿donde estan los impares?
-        let resultadoxDos = numerosInvertidos[i] * 2;        //esos numeros posicion par * 2
+        let resultadoxDos = numerosInvertidos[i] * 2;      //esos numeros posicion par * 2
         if (resultadoxDos >= 10) {
           let resulDosDigitos = resultadoxDos - 9;
           numPar.push(resulDosDigitos);
@@ -20,7 +20,7 @@ const validator = {
       }
     }
     let unionVectores = [...numPar, ...impar]              
-    const valorInicial = 0;
+    const valorInicial = 0;                                   //si no se provee valor inicial lanza typeError
     const suma = unionVectores.reduce(
       (valorAnterior, valorActual) => (valorAnterior) + (valorActual),
       valorInicial
