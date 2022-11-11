@@ -5,14 +5,14 @@
 Mi proyecto se trata sobre la creación de una pagina de fácil acceso en donde el usuario sienta la plena confianza de realizar la compra finaL sin necesidad de llenar un formulario tedioso.
 
 ## prototipos de baja fidelidad
-![prototipo](img/registro.jpg)
-![prototipo](img/tarjeta.jpg)
+![prototipo](src/img/registro.jpg)
+![prototipo](src/img/tarjeta.jpg)
 
 ## prototipo de alta fidelidad
 
 Aquí se realizó el prototipo en Figma Design pensando principalmente en la experiencia de ususario.
 
-![prototipo](img/prototipoAltaFidelidad.png)
+![prototipo](src/img/prototipoAltaFidelidad.png)
 
 
 ## principales usuarios del producto
@@ -32,4 +32,4 @@ Este proyecto esta basado en la experiencia de usuario ya que la UX es un conjun
 
 ## IMAGEN DEL PROYECTO FINAL
 
-![proyectoFinal](img/proyectofinal.png)
+![proyectoFinal](src/img/proyectofinal.png)
