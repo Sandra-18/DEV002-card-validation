@@ -1,6 +1,6 @@
 import validator from './validator.js';
 
-let verificacion = document.getElementById("btnComprobar")  //este boton me acciona la funcion
+let verificacion = document.getElementById("btnComprobar");  //este boton me acciona la funcion
 
 verificacion.addEventListener("click", () => {
     let inputNumero = document.getElementById("claveTarjeta").value;
@@ -11,6 +11,7 @@ verificacion.addEventListener("click", () => {
         document.getElementById("numeroDeTarjeta").innerHTML = resunMaskify;
         alert("valido");
     } else {
+        document.getElementById("numeroDeTarjeta").innerHTML = resunMaskify;
         alert("invalido");
     }
 });

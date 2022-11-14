@@ -1,13 +1,13 @@
 const validator = {
   isValid: function (creditCardNumber) {
-    let arrayDeNumero = Array.from(creditCardNumber)
+    let arrayDeNumero = Array.from(creditCardNumber);
     let numerosInvertidos = arrayDeNumero.reverse();
     let impar = [];
     let numPar = [];
 
     for (let i = 0; i < numerosInvertidos.length; i++) {
-      if ((i + 1) % 2 == 0) {                              //capturando las posiciones pares ¿donde estan los impares?
-        let resultadoxDos = numerosInvertidos[i] * 2;        //esos numeros posicion par * 2
+      if ((i + 1) % 2 === 0) {                              //capturando las posiciones pares ¿donde estan los impares?
+        let resultadoxDos = numerosInvertidos[i] * 2;      //esos numeros posicion par * 2
         if (resultadoxDos >= 10) {
           let resulDosDigitos = resultadoxDos - 9;
           numPar.push(resulDosDigitos);
@@ -20,7 +20,7 @@ const validator = {
       }
     }
     let unionVectores = [...numPar, ...impar]              
-    const valorInicial = 0;
+    const valorInicial = 0;                                   //si no se provee valor inicial lanza typeError
     const suma = unionVectores.reduce(
       (valorAnterior, valorActual) => (valorAnterior) + (valorActual),
       valorInicial
@@ -36,11 +36,11 @@ const validator = {
       if (creditCardNumber.length < 4) {
         return creditCardNumber; 
       } else{
-        let numerosQueSeven = ''
+        let numerosQueSeven = '';
         for(let i = creditCardNumber.length-4; i < creditCardNumber.length; i++) {
           numerosQueSeven += creditCardNumber[i];
         }
-        let numerosQueNoSeven = ''
+        let numerosQueNoSeven = '';
         for (let j = 0; j < creditCardNumber.length -4; j++) {
           numerosQueNoSeven += '#'
         }
