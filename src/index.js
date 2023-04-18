@@ -1,16 +1,28 @@
 import validator from './validator.js';
 
-let verificacion = document.getElementById("btnComprobar")  //este boton me acciona la funcion
-
+const verificacion = document.getElementById("btnComprobar")  //este boton me acciona la funcion
+const inputNumero = document.getElementById("claveTarjeta");
+const numTarget = document.getElementById("numeroDeTarjeta")
 verificacion.addEventListener("click", () => {
-    let inputNumero = document.getElementById("claveTarjeta").value;
-    let resumValidator = validator.isValid(inputNumero);
-    let resunMaskify = validator.maskify(inputNumero);
-    
+    let resumValidator = validator.isValid(inputNumero);                             
     if (resumValidator) {
-        document.getElementById("numeroDeTarjeta").innerHTML = resunMaskify;
+
         alert("valido");
     } else {
         alert("invalido");
     }
-});
+});   
+
+inputNumero.addEventListener("input", () => {
+    const regex = /^[^a-zA-Z]*$/
+    const resul = validator.maskify(inputNumero.value) 
+    if(!regex.test(resul)){
+
+        numTarget.textContent = ""
+        inputNumero.value = ""
+    }else{
+        numTarget.textContent = resul
+    }
+    
+})
+

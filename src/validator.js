@@ -33,19 +33,8 @@ const validator = {
           }
     },
     maskify: function(creditCardNumber){
-      if (creditCardNumber.length < 4) {
-        return creditCardNumber; 
-      } else{
-        let numerosQueSeven = ''
-        for(let i = creditCardNumber.length-4; i < creditCardNumber.length; i++) {
-          numerosQueSeven += creditCardNumber[i];
-        }
-        let numerosQueNoSeven = ''
-        for (let j = 0; j < creditCardNumber.length -4; j++) {
-          numerosQueNoSeven += '#'
-        }
-        return numerosQueNoSeven + numerosQueSeven;
-      }
+      return creditCardNumber.slice(4) + creditCardNumber.slice(0,4).replace(/./g, "#")
+
     }
 };
 export default validator
